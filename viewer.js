@@ -11,10 +11,10 @@ let readyCheck = setInterval(function () {
 }, 500);
 document.addEventListener("DOMContentLoaded", function () {
 	let require = [
-		"class/moment.min.js?v=2",
-		"class/player.js?v=2",
-		"class/connector.js?v=2",
-		"class/GDMPSettings.js?v=2"
+		"../class/moment.min.js?v=2",
+		"../class/player.js?v=2",
+		"../class/connector.js?v=2",
+		"../class/GDMPSettings.js?v=2"
 	];
 	for (i in require) {
 		var s = document.createElement('script');
@@ -52,6 +52,6 @@ function isValidUrl(string) {
 
 $(window).resize(function () {
 	if ($("body").hasClass("circle-progressbar")) {
-		$('.song-info__album-art-image').circleProgress({size: $(".song-info__album-art-image").width() + 1});
+		$('.song-info__album-art-image').circleProgress({ size: $(".song-info__album-art-image").width() + 1 });
 	}
 });
