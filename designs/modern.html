@@ -3,9 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Google Youtube Music Widget</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../styles/viewer.css">
+
+	<link rel="stylesheet" type="text/css" href="../styles/modern.css">
+	<title>Google Youtube Music Widget</title>
+
 	<script type="text/javascript" src="../class/jquery-3.4.1.min.js"></script>
 	<script src="../class/socket.io.min.js"></script>
 	<script type="text/javascript" src="../class/circle-progress.min.js"></script>
@@ -18,11 +20,11 @@
 			<div class="song-info">
 				<div class="song-info__album-art"></div>
 				<div class="song-info__text_info">
+					<div class="song-info__title" title="Title"></div>
 					<div class="song-info__artist">
-						<div class="song-info__artist-subtitle">Author</div>
+						<!-- <div class="song-info__artist-subtitle">Author</div> -->
 						<div class="song-info__artist-name" title="Artist"></div>
 					</div>
-					<div class="song-info__title" title="Title"></div>
 				</div>
 				<div class="song-info__time">
 					<div class="song-info__time-container">

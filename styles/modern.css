@@ -42,15 +42,8 @@
 }
 
 
-@media screen and (max-width: 600px) {
-	.online .song-info .song-info__artist .song-info__artist-subtitle {
-		display: none;
-	}
-}
-
 @media screen and (max-height: 100px) {
 
-	.online .song-info .song-info__artist .song-info__artist-subtitle,
 	.song-info__time,
 	.song-info__album-art {
 		display: none;
@@ -225,22 +218,17 @@ body.blink-pause.paused .song-info__album-art::after {
 	width: 100%;
 }
 
-.song-info__artist-subtitle {
-	text-transform: uppercase;
-	font-size: 0.8em;
-}
-
 .song-info__artist-name {
-	font-weight: 500;
-	font-size: 1.5em;
-}
-
-.song-info__title {
 	margin-top: 0.2em;
 	font-size: 1em;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+}
+
+.song-info__title {
+	font-weight: 500;
+	font-size: 1.5em;
 }
 
 .song-info__time-current,
